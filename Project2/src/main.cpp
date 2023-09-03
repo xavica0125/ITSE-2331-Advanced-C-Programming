@@ -87,6 +87,9 @@ int main()
 		cout << "Enter string for array 2 index " << i + 1 << ": ";
 		cin >> classArray[i];
 	}
+
+	cout << "\n";
+
 	sortArrays(builtInArray,  classArray, arraySize2);
 
 	// Output arrays after sorting
@@ -117,7 +120,7 @@ int main()
 	int* notConstPtr = &val1;
 
 	// Constant pointer to nonconstant data
-	int* const constPtrPtr  = &val2;
+	int* const constPtrPtr = &val2;
 
 	// Nonconstant pointer to constant data
 	const int* constDataPtr = &val3;
@@ -126,7 +129,7 @@ int main()
 	const int* const dataAndPtrPtr = &val4;
 
 	// Derenferenced pointer values before calling demoPtrTechniques function
-	cout << "Before: \n";
+	cout << "Before calling demoPtrTechniques function: \n";
 	cout << *notConstPtr << "\n";
 	cout << *constPtrPtr << "\n";
 	cout << *constDataPtr << "\n";
@@ -136,10 +139,10 @@ int main()
 	demoPtrTechniques(notConstPtr, constPtrPtr, constDataPtr, dataAndPtrPtr, val5);
 
 	// Derenferenced pointer values after calling demoPtrTechniques function
-	cout << "After: \n";
+	cout << "After calling demoPtrTechniques function: \n";
 	cout << *notConstPtr << "\n";
 	cout << *constPtrPtr << "\n";
 	cout << *constDataPtr << "\n";
 	cout << *dataAndPtrPtr<< "\n";
-
+	
 }
