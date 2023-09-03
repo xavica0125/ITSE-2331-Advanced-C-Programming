@@ -17,15 +17,21 @@ void determineLarger(int one, int two, int* largerNum)
 	}
 }
 
-bool compareArrays(string one[], string two[], int arraySize)
+bool compareArrays(string one[], string two[],const int arraySize)
 {
-	bool match = false;
+	bool match = true;
 	for (int i = 0; i < arraySize; i++)
 	{
-		if (one[i] == two[i])
+		if (one[i] != two[i])
 		{
-			match = true;
+			match = false;
 		}
 	}
 	return match;
+}
+
+void sortArrays(string* builtInArray, array<string, 5>& classArray, const int arraySize2)
+{
+	sort(classArray.begin(), classArray.end());
+	sort(builtInArray, builtInArray + arraySize2);
 }

@@ -68,5 +68,18 @@ int main()
 		cout << "Enter string for array 2 index " << i + 1 << ": ";
 		cin >> classArray[i];
 	}
+	sortArrays(builtInArray,  classArray, arraySize2);
+	for (string items : builtInArray)
+	{
+		cout << items << "\n";
+	}
 
+	cout << "\n";
+	
+	for (string items : classArray)
+	{
+		cout << items << "\n";
+	}
+
+	cout << "\n";
 }
