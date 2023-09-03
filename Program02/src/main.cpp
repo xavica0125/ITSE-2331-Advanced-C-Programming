@@ -144,5 +144,5 @@ int main()
 	cout << *constPtrPtr << "\n";
 	cout << *constDataPtr << "\n";
 	cout << *dataAndPtrPtr<< "\n";
-	
+	system("pause");
 }
