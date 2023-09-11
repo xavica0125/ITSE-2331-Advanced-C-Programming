@@ -29,6 +29,10 @@
     <ClInclude Include="src\Part2.h" />
     <ClInclude Include="src\UserMenu.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="FlowchartProgram01.drawio.svg" />
+    <None Include="Program01.exe" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
