@@ -12,7 +12,7 @@ void getCurrentMonthAndYear(int& month, int& year)
 }
 
 
-void outputReport(vector<Customer>& customerInstances,vector<Order>& orderInstances,vector<Product>& productInstances)
+void outputReport(vector<Customer> customerInstances,vector<Order>& orderInstances,vector<Product>& productInstances)
 {
 	outputCustomerInfo(customerInstances);
 	outputOrderInfo(orderInstances);

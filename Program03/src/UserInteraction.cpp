@@ -19,8 +19,8 @@ void mainMenu()
 		switch (choice) {
 		case 1:
 		{
-			Customer customer = createNewCustomer();
-			customerInstances.push_back(customer);
+			//Customer customer = createNewCustomer();
+			customerInstances.push_back(createNewCustomer());
 			break;
 		}
 		case 2:
@@ -116,7 +116,6 @@ Product createNewProduct()
 	return Product(productNum, productName);
 
 }
-
 
 
 

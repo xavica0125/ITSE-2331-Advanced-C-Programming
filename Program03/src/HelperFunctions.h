@@ -12,7 +12,7 @@ using std::time_t; using std::vector; using std::cout; using std::setw;
 
 void getCurrentMonthAndYear(int& month, int& year);
 
-void outputReport(vector<Customer>& customerInstances,vector<Order>& orderInstances, vector<Product>& productInstances);
+void outputReport(vector<Customer> customerInstances,vector<Order>& orderInstances, vector<Product>& productInstances);
 
 void outputCustomerInfo(vector<Customer>& customerInstances);
 
