@@ -33,6 +33,7 @@ void mainMenu()
 	string operatorArray[] = {"+" , "-", "*", "/", "++ Prefix", "Postfix ++", "-- Prefix", "Postfix--"};
 	do
 	{
+		// Create two OverloadDemo objects
 		cout << "Welcome!\n";
 		cout << "Enter integer OverloadDemo object 1: ";
 		cin >> num;
@@ -50,7 +51,7 @@ void mainMenu()
 		OverloadDemo demo2(num, d, s);
 		do
 		{
-
+			// Choose operations to perform on the two objects
 			for (int i = 0; i < 8; i++)
 			{
 				cout << i + 1 << ". " << operatorArray[i] << "\n";

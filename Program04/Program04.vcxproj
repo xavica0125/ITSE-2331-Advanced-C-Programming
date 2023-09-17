@@ -133,9 +133,6 @@
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\OverloadDemo.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Program04.exe" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

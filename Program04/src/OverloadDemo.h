@@ -14,7 +14,7 @@ private:
 	int intOne;
 	double doubleOne;
 	string stringOne;
-	void decrementString();
+	void decrementString(); // Helper function for decrement operators
 
 public:
 	
@@ -42,7 +42,7 @@ public:
 	double getDoubleOne() const;
 	string getStringOne() const;
 
-	OverloadDemo operator+(const OverloadDemo& other) const ;
+	OverloadDemo operator+(const OverloadDemo& other) const;
 	OverloadDemo operator-(const OverloadDemo& other) const;
 	OverloadDemo operator*(const OverloadDemo& other) const;
 	OverloadDemo operator/(const OverloadDemo& other)const;

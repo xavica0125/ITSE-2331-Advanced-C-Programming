@@ -3,7 +3,7 @@
 
 void OverloadDemo::decrementString()
 {
-		stringOne = stringOne.substr(0, stringOne.length() - 1);
+	stringOne = stringOne.substr(0, stringOne.length() - 1);
 }
 
 void OverloadDemo::setIntOne(int)
