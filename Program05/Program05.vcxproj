@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0f2597f2-8ed8-415f-90e5-d6e4ff7f00f5}</ProjectGuid>
-    <RootNamespace>Program04</RootNamespace>
+    <ProjectGuid>{c1cbf9c4-4b77-47cb-a145-07961ba53ad4}</ProjectGuid>
+    <RootNamespace>Program05</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,14 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\OverloadDemo.h" />
+    <ClInclude Include="src\mainMenu.h" />
+    <ClInclude Include="src\OvernightPackage.h" />
+    <ClInclude Include="src\Package.h" />
+    <ClInclude Include="src\TwoDayPackage.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Main.cpp" />
-    <ClCompile Include="src\OverloadDemo.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Program04.exe" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\mainMenu.cpp" />
+    <ClCompile Include="src\OvernightPackage.cpp" />
+    <ClCompile Include="src\Package.cpp" />
+    <ClCompile Include="src\TwoDayPackage.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
