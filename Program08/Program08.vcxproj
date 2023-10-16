@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{769497e5-fc98-4a58-8554-b6f9b90c6b99}</ProjectGuid>
-    <RootNamespace>Program07</RootNamespace>
+    <ProjectGuid>{92c4bacc-37f8-4e80-8c13-5af87a53ca60}</ProjectGuid>
+    <RootNamespace>Program08</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,14 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\PhoneNumber.h" />
+    <Text Include="src\CustomerMaster.txt" />
+    <Text Include="src\Orders.txt" />
+    <Text Include="src\Products.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\userInteraction.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\PhoneNumber.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Program07.exe" />
+    <ClCompile Include="src\userInteraction.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
