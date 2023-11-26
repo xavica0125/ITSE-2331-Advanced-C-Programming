@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6ef4df60-2aa4-4b3a-846c-512430152745}</ProjectGuid>
-    <RootNamespace>Program12</RootNamespace>
+    <ProjectGuid>{a249d4db-30ca-4889-9879-9ac2f0e697ac}</ProjectGuid>
+    <RootNamespace>Program14</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,15 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\mainMenu.h" />
-    <ClInclude Include="src\Stack.h" />
+    <ClInclude Include="src\List.h" />
+    <ClInclude Include="src\Node.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\mainMenu.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Program12.exe" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
