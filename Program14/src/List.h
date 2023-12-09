@@ -92,6 +92,23 @@ private:
 
 public:
 
+	~List()
+	{
+		if(!isEmpty())
+		{
+			Node<T>* curptr = headptr;
+			Node<T>* tempptr = nullptr;
+
+			while (curptr != nullptr)
+			{
+				tempptr = curptr;
+				curptr = curptr->next;
+				delete tempptr;
+				tempptr = nullptr;
+			}
+		}
+	}
+
 	void insertFront(const T& data)
 	{
 		Node<T>* newNode = getNewNode(data);

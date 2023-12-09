@@ -17,7 +17,7 @@ string Customer::getCustomerName() const
 	return name;
 }
 
-void Customer::setCustomerName(string name)
+void Customer::setCustomerName(const string& name)
 {
 	this->name = name;
 }

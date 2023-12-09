@@ -1,34 +1,31 @@
 #pragma once
 
-#include "HelperFunctions.h"
+#include "Order.h"
 
 #include <string>
 #include <vector>
 
-using std::string;
-using std::vector;
+using std::string; using std::vector;
 
 class Customer
 {
-
-	friend void getCurrentMonthAndYear(int &month, int &year);
-
+	friend void getTime(time_t& creationTime);
 private:
 	static int customerCount;
 	const int custID;
-	const string name;
+	string name;
 	string address;
-	vector<int> orderNums;
+	vector<Order*> orderNums;
 	time_t customerCreationTime;
 	int month, year;
 
 public:
 	Customer(const int custID, const string name, const string address)
 		: custID(custID),
-		  name(name),
-		  address(address)
+		name(name),
+		address(address)
 	{
-		getCurrentMonthAndYear(month, year);
+		getTime(customerCreationTime);
 		customerCount++;
 	};
 
@@ -42,9 +39,11 @@ public:
 	const string getCustomerAddress() const;
 	void setCustomerAddress(const string& address);
 
-	const vector<int> getOrderNums() const;
-	void setOrderNums(const int orderNum);
+	const time_t getCustomerCreationTime() const;
 
-	const string getCustomerCreationTime() const;
+	const vector<Order*>& getOrderNums() const;
+	void setOrderNums(Order* orderNum);
 
+	~Customer();
 };
+

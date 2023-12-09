@@ -8,7 +8,7 @@ void getCurrentMonthAndYear(int& month, int& year)
 
 	month = tm_ptr->tm_mon;
 	year = tm_ptr->tm_year + 1900;
-
+	
 }
 
 
